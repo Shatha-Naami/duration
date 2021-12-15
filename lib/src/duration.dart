@@ -49,7 +49,7 @@ String prettyDuration(Duration duration,
   final partFmt =
       (int amount, String Function(int amount, bool abbreviated) annotater) {
     final sb = StringBuffer();
-    sb.write(amount);
+    if(amount!=2) sb.write(amount);
     sb.write(spacer);
     sb.write(annotater(amount, abbreviated));
     return sb.toString();

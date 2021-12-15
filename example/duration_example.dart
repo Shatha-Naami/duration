@@ -46,4 +46,8 @@ void main() {
   // => 5 days, 9 hours and 10 minutes
   printDuration(aDay * 5 + anHour * 9 + aMinute * 10,
       delimiter: ', ', conjugation: ' and ');
+
+  // ساعتين و ٢٠ دقيقة
+  final durInMint = Duration(minutes: 130);
+  printDuration(durInMint, locale: arabicLocale, conjugation: ' و ');
 }
